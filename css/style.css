@@ -1,0 +1,72 @@
+input:focus {
+    background-color: aqua;
+}
+/* Universel selector */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+body {
+    background-color: black;
+}
+/* id selector */
+.container {
+text-align: center;
+width: 50%;
+background-color: red;
+color: black;
+margin: 20px auto;
+padding: 20px;
+}
+/* decenent selector */
+#container h1 {
+    font-size: 50px;
+    margin: 20px 0px;
+}
+form{
+}
+/* Grouping Selector */
+input,
+label {
+    display: block;
+    width: 80%;
+    margin: auto;
+}
+label{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+input{
+    padding: 10px;
+    margin: 10px auto;
+}
+p{
+    font-size: 18px;
+}
+/*decendent selector*/
+p a{
+text-decoration: none;
+color: black;
+font-weight: bold;
+}
+/* Attribute selector? */
+input[type="submit"] {
+    width: 30%;
+    font-size:15px;
+    font-weight: 600;
+    background-color: black;
+    color: rgb(237, 17, 167);
+    border-radius: 5px;
+}
+/* psudo class selector */
+input[type="submit"]:hover {
+    background-color: white;
+    color: red;
+    border: red;
+}
+/* psudo element selector */
+input::placeholder{
+    color: red;
+}
